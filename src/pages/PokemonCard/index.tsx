@@ -42,7 +42,7 @@ export default function PokemonCard() {
   if (error) return <p style={{ color: "red" }}>{error}</p>;
 
   return (
-    <div>
+    <div className={styles.container}>
       {pokemon.map((p, index) => (
         <div key={index} className={styles.card}>
           <div className={styles.imageContainer}>
@@ -50,6 +50,7 @@ export default function PokemonCard() {
               src={p.image}
               alt={`ポケモン ${p.name}の画像`}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className={styles.image}
             />
           </div>
