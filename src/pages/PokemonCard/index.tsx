@@ -24,7 +24,7 @@ export default function PokemonCard() {
         const data = await res.json();
 
         setPokemon(data);
-      } catch (error) {
+      } catch {
         setError("データの取得に失敗しました。");
       } finally {
         setLoading(false);
