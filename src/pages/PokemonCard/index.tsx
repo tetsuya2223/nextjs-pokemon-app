@@ -22,11 +22,9 @@ export default function PokemonCard() {
         }
 
         const data = await res.json();
-        console.log(data); // デバック用。あとで消す。
 
         setPokemon(data);
       } catch (error) {
-        console.error("データ取得エラー:", error);
         setError("データの取得に失敗しました。");
       } finally {
         setLoading(false);
