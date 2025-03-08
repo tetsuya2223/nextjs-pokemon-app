@@ -1,4 +1,4 @@
-import PokemonCard from "../../components/PokemonCard/index";
+import PokemonCard from "./PokemonCard/index";
 
 export default function Home() {
   return (
