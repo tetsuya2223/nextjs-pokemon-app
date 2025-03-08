@@ -24,6 +24,7 @@
 
 .image {
   object-fit: cover;
+  position: relative;
   transition: transform 0.3s ease;
 }
 
